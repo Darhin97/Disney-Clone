@@ -42,6 +42,7 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   padding: 0 3.6rem;
+  overflow-x: hidden;
 `;
 
 const Logo = styled.img`
@@ -70,7 +71,7 @@ const NavMenu = styled.div`
       letter-spacing: 1.42px;
       position: relative;
 
-      &:after {
+      &::after {
         content: "";
         height: 2px;
         background-color: white;
@@ -84,8 +85,9 @@ const NavMenu = styled.div`
         transform: skewX(0);
       }
     }
+
     &:hover {
-      span:after {
+      span::after {
         transform: scaleX(1);
         opacity: 1;
       }
