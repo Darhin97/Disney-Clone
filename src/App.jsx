@@ -3,7 +3,7 @@ import Header from "./componets/Header";
 import Home from "./componets/Home";
 import Root from "./componets/Root";
 import Detail from "./componets/Detail";
-// import Login from "./componets/Login";
+import Login from "./componets/Login";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +18,10 @@ function App() {
         {
           path: "detail",
           element: <Detail />,
+        },
+        {
+          path: "login",
+          element: <Login />,
         },
       ],
     },
