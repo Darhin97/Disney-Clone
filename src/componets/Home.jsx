@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import ImgSlider from "./imgSlider";
 import Viewers from "./Viewers";
